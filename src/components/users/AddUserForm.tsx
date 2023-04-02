@@ -64,7 +64,6 @@ const AddUserForm: React.FC<AddUserFormProps> = ({ onAddUser }) => {
 
   const changeHandler = (e: React.FormEvent<HTMLInputElement>) => {
     const { name, value } = e.target as HTMLInputElement;
-    console.log(name, value);
     if (name === "email") setEmail(value);
     if (name === "firstName") setFirstName(value);
     else if (name === "lastName") setLastName(value);
